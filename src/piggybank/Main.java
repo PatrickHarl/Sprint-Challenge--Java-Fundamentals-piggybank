@@ -11,6 +11,7 @@ public class Main {
 
 
 		double total = 0;
+		int myCount = 0;
 		int dollars = (int)amount;
 		int quarters = (int)((amount - dollars) / 0.25);
 		int dimes = (int)((amount - dollars - (quarters * 0.25)) / 0.10);
@@ -168,6 +169,38 @@ public class Main {
 
 
 		}
+
+		for (Money m : bank) {
+
+
+			if(m.getNumCoins() == 0) {
+
+				myCount++;
+
+			}
+
+		}
+
+		while (myCount > 0) {
+
+			for (int i = 0; i < bank.size(); i++) {
+
+	 			if(bank.get(i).getNumCoins() <= 0)
+	 			{
+
+	 				bank.remove(i);
+
+	 			}
+
+ 			}
+
+ 			myCount--;
+
+
+		}
+		
+
+
 
 		for (Money m : bank) {
 
