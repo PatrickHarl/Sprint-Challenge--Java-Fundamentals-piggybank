@@ -25,9 +25,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Describe why Java is called an object oriented, strongly typed language.
+
+It is object oriented in that the language is built around classes (or objects) with their own fields and methods managing and displaying data, as opposed to functions and logic. It is strongly typed in that data types for every object / variable must be declared specifically and no other data type can be held inside that particular variable or object.
+
 2. Give examples of Java Collections explaining the use and differences between them.
+
+HashMaps and ArrayLists are two examples. ArrayLists hold data that is ordered, while hashmaps use a key and value pair system to access data and that data is not in any particular order. Arraylists are much better for use with data that needs to be sorted. If the data does not need to be sorted, hashmaps are more efficient.
+
+
 3. What is recursion and how does it differ from regular looping?
+
+Recursion is when the solution to a problem depends on the solution of smaller instances of the same problem. A common application for recursion is solving factorials where you have to multiply a integer by the integer - 1 and work your way all the way down to 1. It differs from looping in that looping simply repeats a task until a condition is met.
+
 4. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+
+Abstract classes allow you to create functionality that subclasses can then implement or override while interfaces allow you to define functionality, but not implement it. If you want to ensure that certain methods are always implemented within a certain set of classes, you can make those classes implement an interface and they will be forced to define the inherited methods. With abstract classes, you can also force implementation of specific methods, but can also define base functionality with the parent class methods. If you made an Animal interface, it could be used to force implementation of move, eat, and makeSound. All animals can do these three actions and thus you want to be sure they are always implemented no matter what additional functionality is need. If you need to force implementation of move, eat and makeSound, while adding additional baseline functionality, an abstract class would need to be used.
 
 ## Instructions
 
